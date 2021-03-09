@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/css/autoComplete.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pluga - As ferramentas que vocês mais ama, agora juntas.</title>
+</head>
+<body>
+    <main class="tools">
+        <header>
+            <a href="https:pluga.co" class="logo" title="As ferramentas que você mais ama, agora juntas.">
+                <img src="./img/logo-blue.svg" alt="As ferramentas que você mais ama, agora juntas.">
+            </a>
+        </header>
+        <h1 class="main-title">As ferramentas que você mais ama,<br> agora juntas.</h1>
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="Buscar +60 ferramentas...">
+            <button class="search-btn">
+                <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Header---Geral" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1282.000000, -82.000000)" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Menu" stroke="#2D3A37" stroke-width="2">
+                        <g transform="translate(210.000000, 78.000000)">
+                            <g id="search" transform="translate(1073.000000, 5.000000)">
+                            <circle id="Oval" cx="7.5" cy="7.5" r="7.5"></circle>
+                            <path d="M18,18 L12.8,12.8" id="Shape"></path>
+                            </g>
+                        </g>
+                        </g>
+                    </g>
+                    </svg>
+            </button>
+        </div>
+        <div class="tools-list" id="results">
+            
+        </div>
+        <div class="modal-wrap" id="modal">
+            <div class="modal-dialog">
+                <div class="current-tool-modal">
+                    <div class="current-tool-modal-item">
+                        <div id="current-tool-icon" class="single-modal-icon single-modal-item">
+                            <img id="tool-modal-icon" src="https://s3-sa-east-1.amazonaws.com/pluga.co/apps/icons/omie/omie-icon.svg" alt="Omie">
+                        </div>
+                        <div class="single-modal-item tool-content">
+                            <p id="item-name">Omie</p>
+                            <a class="primary-btn" id="item-modal-link" title="Omie" href="/" data-open="Omie">
+                                Acessar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h2>Últimas Ferramentas Buscadas</h2>
+                <div class="recent-tools-searched" id="last-tools">
+                </div>
+                <span id="close-modal">X</span>
+            </div>
+            
+        </div>
+
+
+
+        <button id="load-more" class="primary-btn">Load More</button>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/js/autoComplete.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
